@@ -82,7 +82,8 @@ public class StickyPartitionAssignmentStrategy extends StickyMulticastStrategy i
   private final Integer _partitionFullnessFactorPct;
   private final ZkClient _zkClient;
   private final String _clusterName;
-  private final ConcurrentHashMap<String, ElasticTaskAssignmentInfo> _elasticTaskAssignmentInfoHashMap = new ConcurrentHashMap<>();
+  private final ConcurrentHashMap<String, ElasticTaskAssignmentInfo> _elasticTaskAssignmentInfoHashMap =
+      new ConcurrentHashMap<>();
 
   /**
    * Constructor for StickyPartitionAssignmentStrategy
